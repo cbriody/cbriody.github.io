@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crocheted Stuffies Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #d5d5cd;
+      color: #333;
+    }
+    header {
+      background-color: #796281;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    .logo {
+      flex: 0 0 auto;
+    }
+    .logo img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .header-content {
+      flex: 1;
+      text-align: center;
+    }
+    .header-content h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .header-content p {
+      margin: 0;
+      font-size: 1rem;
+    }
+    nav {
+      background-color: #4b5764;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery-item {
+      position: relative;
+      background: #797663;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-item .default-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item .hover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .hover-image {
+      opacity: 1;
+    }
+
+    .gallery-item:hover .default-image {
+      opacity: 0;
+    }
+
+	@media (max-width: 768px) {
+	  .gallery {
+	    flex-direction: column;
+	    align-items: center;
+	  }
+
+	  .gallery-item {
+	    width: 80%;
+	  }
+	}
+
+	.gallery-note {
+	  text-align: center;
+	  font-size: 1.2rem;
+	  color: #333;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	}
+
+    footer {
+      background-color: #4b5764;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+		<img src="logo.jpg" alt="Logo">
+    </div>
+    <div class="header-content">
+		<h1> Threadventures </h1>
+		<p>Handmade crocheted stuffies made with love!</p>
+    </div>
+  </header>
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="gallery" class="gallery">
+    <div class="gallery-item">
+      <img src="narwhal.jpg" alt="Cute Narwhal Stuffy" class="default-image">
+      <img src="narwhal.jpg" alt="Cute Narwhal Stuffy" class="hover-image">
+      <h3>Narwhal Buddy</h3>
+      <p>Cuddly and adorable, perfect for snuggles! <br> $12</p>
+    </div>
+    <div class="gallery-item">
+      <img src="loaf-cat.jpg" alt="Loaf Cat" class="default-image">
+      <img src="loaf-cat.jpg" alt="Loaf Cat" class="hover-image">
+      <h3> Loaf Cat </h3>
+      <p>A cute companion for everyone.<br> $25</p>
+    </div>
+    <div class="gallery-item">
+      <img src="flip-fish1.jpg" alt="Flipping Fish" class="default-image">
+      <img src="flip-fish2.jpg" alt="Flipping Fish Alt" class="hover-image">
+      <h3>A Flippy Friend</h3>
+      <p>A fun bottle flip type game for all ages!<br> $24</p> 
+    </div>
+    <div class="gallery-item">
+      <img src="chick-a-dee.jpg" alt="Chick-a-Dee" class="default-image">
+      <img src="chick-a-dee.jpg" alt="Chick-a-Dee" class="hover-image">
+      <h3>Chick-a-Dee</h3>
+      <p>A cute little chicken to go on your desk!<br> $4</p> 
+    </div>
+    <div class="gallery-item">
+      <img src="poppin-mushroom1.jpg" alt="Poppin' Mushroom" class="default-image">
+      <img src="poppin-mushroom2.jpg" alt="Poppin' Mushroom Alt" class="hover-image">
+      <h3>Poppin' Mushroom</h3>
+      <p>A fun fidget popping for kids and adults!<br> $6</p> 
+    </div>
+    <div class="gallery-item">
+      <img src="octopus.jpg" alt="Octopus" class="default-image">
+      <img src="octopus.jpg" alt="Octopus" class="hover-image">
+      <h3>Octopus</h3>
+      <p>An adorable fluffy octopus for holding and having fun with!<br> $6</p> 
+    </div>
+    <div class="gallery-item">
+      <img src="scrunchies.jpg" alt="Scrunchies" class="default-image">
+      <img src="scrunchies.jpg" alt="Scrunchies" class="hover-image">
+      <h3>Scrunchies</h3>
+      <p>A nice schrunchie to pull your hair back, it will make any outfit look better!<br> $6</p> 
+    </div>
+    <div class="gallery-item">
+      <img src="corn1.jpg" alt="Corn" class="default-image">
+      <img src="corn2.jpg" alt="Corn" class="hover-image">
+      <h3>Corn</h3>
+      <p> A cute peelable corn with a face that could light up anyone's day! 
+	  <br>"it's corn a big lump of knots it has the poly-fil! it has the yarn, I can't imagine a more beautiful thing!"<br> $27</p> 
+    </div>
+    <div class="gallery-item">
+      <img src="potato.jpg" alt="Emotional Support Potato" class="default-image">
+      <img src="potato.jpg" alt="Emotional Support Potato" class="hover-image">
+      <h3>Emotional Support Potato</h3>
+      <p>A loveable frowny potato to help you through your hard times! <br> $8 </p> 
+    </div>
+    <div class="gallery-item">
+      <img src="egg1.jpg" alt="Hard-Boiled Egg" class="default-image">
+      <img src="egg2.jpg" alt="Hard-Boiled Egg Alt" class="hover-image">
+      <h3>Hard-Boiled Egg</h3>
+      <p>A openable egg with a shell and a yolk!<br> $11</p> 
+    </div>
+    <div class="gallery-item">
+      <img src="rudolph.jpg" alt="Rudolph" class="default-image">
+      <img src="rudolph.jpg" alt="Rudolph" class="hover-image">
+      <h3>Rudolph</h3>
+      <p>An enchanting little reindeer perfect for the holiday season! <br> $8</p> 
+    </div>
+    <div class="gallery-item">
+      <img src="blueberry.jpg" alt="Blueberry" class="default-image">
+      <img src="blueberry.jpg" alt="Blueberry" class="hover-image">
+      <h3>Blueberry</h3>
+      <p>A tiny fruit perfect for a small but cutesy gift! <br> $5</p> 
+    </div>
+    <div class="gallery-item">
+      <img src="pickle.jpg" alt="Pickle" class="default-image">
+      <img src="pickle.jpg" alt="Pickle" class="hover-image">
+      <h3>Emotional Support Pickle</h3>
+      <p>A funny pickle to make you laugh when times are tough!<br> $16</p> 
+    </div>
+    <div class="gallery-item">
+      <img src="turtle1.jpg" alt="Turtle" class="default-image">
+      <img src="turtle2.jpg" alt="Turtle Alt" class="hover-image">
+      <h3>Turtle</h3>
+      <p>A sweet stuffy to snuggle and hug! <br> $17 </p> 
+    </div>
+  </section>
+  <section id="about" style="padding: 20px; text-align: center;">
+    <h2>About Me</h2>
+    <p>Hi there! My name is Poppy, and I’m the creator behind Threadventures! Crocheting is more than just a hobby for me – it’s my passion, my creative outlet, and my way of bringing a little extra joy into the world.<br><br>I specialize in handmade crocheted stuffies, each crafted with love, care, and attention to detail. Whether it’s a neon narwhal, a cuddly cat, or a fun-filled fish, every creation is a reflection of my dedication to quality and creativity. My goal is to make unique, one-of-a-kind pieces that are as charming as they are comforting.<br><br>Crocheting has been a part of my life for less than one year, and what started as a simple pastime has grown into a fulfilling journey. I love experimenting with new patterns, colors, and designs to create something special for every customer. I believe handmade items carry a warmth and personality that can’t be matched, and I pour my heart into every stitch.
+	When I’m not crocheting, you can find me playing with my family, sipping hot cocoa or hanging out with my friends.<br><br>Thank you for stopping by and supporting my hobby! Whether you’re here to find the perfect gift, add a little whimsy to your home, or simply appreciate the beauty of handmade creations, I’m so glad you’re here. Feel free to reach out if you have any questions, custom requests, or just want to say hello. I’d love to hear from you!<br><br>~ Poppy</p>
+  </section>
+  <section id="contact" style="padding: 20px; text-align: center;">
+    <h2>Contact</h2>
+    <p>Have questions or want to place a custom order?<br>Some items may be made into holiday ornaments!<br>Feel free to reach out!</p>
+    <p>Email: <a href="mailto:poppy.briody@gmail.com">poppy.briody@gmail.com</a></p>
+    
+  </section>
+  <footer>
+    <p>&copy; 2024 Threadventures. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
